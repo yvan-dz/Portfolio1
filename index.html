@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alex Dupont</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-aos="fade-down">
+        <a class="navbar-brand" href="#">Alex Dupont</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center" data-aos="zoom-in">
+        <div class="container">
+            <h1 data-aos="fade-up">Alex Dupont</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Étudiant en Informatique - Développeur Web & Logiciel</p>
+            <a href="#projects" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="400">Voir mes projets</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">À propos de moi</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="https://t3.ftcdn.net/jpg/01/97/11/76/360_F_197117649_MYVpw74AYw4FmgDGC1tyM7G1xMavIShU.jpg" class="img-fluid rounded" alt="Alex Dupont">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <p>Bonjour ! Je m'appelle Alex Dupont et je suis un étudiant en informatique passionné par le développement de logiciels et le web. Avec un fort intérêt pour l'intelligence artificielle et le développement full-stack, je m'efforce de créer des solutions efficaces et innovantes. Je suis toujours à la recherche de nouvelles opportunités pour améliorer mes compétences et contribuer à des projets intéressants.</p>
+                    <p>Actuellement, je poursuis un diplôme en informatique à l'Université de Technologie. Mon objectif est de devenir un développeur polyvalent, capable de résoudre des problèmes complexes et de développer des applications qui font la différence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">Compétences</h2>
+            <div class="row">
+                <div class="col-md-4 text-center" data-aos="zoom-in">
+                    <i class="fas fa-code fa-3x mb-3"></i>
+                    <h4>Développement Web</h4>
+                    <p>HTML, CSS, JavaScript, React.js, Bootstrap</p>
+                </div>
+                <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-database fa-3x mb-3"></i>
+                    <h4>Base de Données</h4>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-robot fa-3x mb-3"></i>
+                    <h4>Intelligence Artificielle</h4>
+                    <p>Python, TensorFlow, Machine Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">Mes Projets</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card mb-4">
+                        <img src="https://cdn.qwiklabs.com/6pi71cGa4Nz1yhgU%2Biwp5cDD7Mv2JLuaIIHmW448Xiw%3D" class="card-img-top" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestionnaire de Tâches</h5>
+                            <p class="card-text">Un gestionnaire de tâches intuitif construit avec React.js et Firebase pour la gestion des tâches personnelles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card mb-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8UkazWcKwIPtC9Fu8md5fZvDjiGavWNzeA&s" class="card-img-top" alt="Projet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Application de Suivi Fitness</h5>
+                            <p class="card-text">Une application mobile pour suivre les séances d'entraînement et les progrès, développée avec React Native.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card mb-4">
+                        <img src="https://media.licdn.com/dms/image/v2/C5612AQEO_36Avp6w0A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1520259018411?e=2147483647&v=beta&t=cX3Cs78umJbnOd095QzOoy-JMbUkKysfNDHiwfgbF6E" class="card-img-top" alt="Projet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Système de Recommandation</h5>
+                            <p class="card-text">Un projet de machine learning pour recommander des produits basé sur les préférences des utilisateurs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">Expérience</h2>
+            <div class="timeline" data-aos="fade-up">
+                <div class="timeline-item">
+                    <h4>Stage Développeur Web - TechCorp</h4>
+                    <p class="text-muted">Juin 2023 - Septembre 2023</p>
+                    <p>Développement de nouvelles fonctionnalités pour le site web principal de l'entreprise en utilisant React.js et Node.js. Collaboration avec l'équipe de conception pour améliorer l'interface utilisateur.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Projet Étudiant - Système de Gestion de Bibliothèque</h4>
+                    <p class="text-muted">Janvier 2023 - Mai 2023</p>
+                    <p>Création d'une application web pour la gestion d'une bibliothèque universitaire, incluant la gestion des emprunts, des retours et des réservations de livres.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">Contactez-moi</h2>
+            <p class="text-center text-muted mb-4" data-aos="fade-up">Vous avez un projet en tête ou souhaitez simplement discuter ? N'hésitez pas à me contacter via le formulaire ci-dessous.</p>
+            <form data-aos="fade-up" data-aos-delay="100">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center" data-aos="fade-up">
+        <p>&copy; 2024 Alex Dupont. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,  // Durée de l'animation en millisecondes
+            once: false,     // L'animation se joue à chaque fois que l'élément entre dans le viewport
+            mirror: true     // L'animation se joue aussi en scrollant vers le haut
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

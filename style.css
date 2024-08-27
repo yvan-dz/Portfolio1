@@ -1,0 +1,379 @@
+/* Importation de la police futuriste */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+/* Général */
+body {
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 2rem;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #00ffea;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px #00ffea;
+}
+
+.navbar-nav .nav-link {
+    color: #00ffea;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #ff00a6;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff00a6;
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px #ff00a6;
+}
+
+
+
+
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: inset 0 0 50px rgba(0, 255, 234, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #ff00a6, 0 0 20px #ff00a6;
+    animation: glow 2s infinite alternate;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #00ffea;
+    text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+}
+
+.hero-section .btn {
+    padding: 0.75rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00ffea, #ff00a6);
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.5), 0 0 30px rgba(255, 0, 166, 0.5);
+}
+
+.hero-section .btn:hover {
+    background: linear-gradient(45deg, #ff00a6, #00ffea);
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 166, 0.8), 0 0 40px rgba(0, 255, 234, 0.8);
+}
+
+/* Keyframes pour les animations de glow */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px #ff00a6, 0 0 30px #ff00a6, 0 0 40px #ff00a6;
+    }
+    100% {
+        text-shadow: 0 0 30px #ff00a6, 0 0 50px #ff00a6, 0 0 70px #ff00a6;
+    }
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #0a0a0a;
+}
+
+#about .row {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 166, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 166, 0.8);
+}
+
+#about p {
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+    color: #ffffff;
+}
+
+#skills i {
+    color: #00ffea;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#skills i:hover {
+    color: #ff00a6;
+    transform: rotate(20deg);
+}
+
+#skills h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#skills p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    background-color: #0a0a0a;
+}
+
+#projects .card {
+    background-color: #1c1c1c;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.3);
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 234, 0.5);
+}
+
+#projects .card-img-top {
+    border-radius: 0;
+    object-fit: cover;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#projects .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #00ffea;
+}
+
+#projects .card-text {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1c1c1c, #0a0a0a);
+    color: #ffffff;
+}
+
+.timeline::before {
+    background-color: #00ffea;
+}
+
+.timeline-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #ff00a6;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    background-color: #0a0a0a;
+}
+
+#contact h2 {
+    margin-bottom: 2rem;
+    color: #00ffea;
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    color: #cccccc;
+}
+
+#contact .form-control {
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #00ffea;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #ff00a6;
+    box-shadow: 0 0 5px rgba(255, 0, 166, 0.5);
+}
+
+#contact .btn {
+    padding: 0.75rem 2.5rem;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #00ffea, #ff00a6);
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.5), 0 0 30px rgba(255, 0, 166, 0.5);
+}
+
+#contact .btn:hover {
+    background: linear-gradient(45deg, #ff00a6, #00ffea);
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 166, 0.8), 0 0 40px rgba(0, 255, 234, 0.8);
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+footer p a {
+    color: #00ffea;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+footer p a:hover {
+    color: #ff00a6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    #projects .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
